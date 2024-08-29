@@ -1,0 +1,152 @@
+/*
+--- 01 TYPOGRAPHY SYSTEM
+
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Font weights
+Default: 400
+
+
+- Line heights
+Default: 1
+
+
+- Letter spacing
+
+
+--- 02 COLORS
+
+- Primary: #252EFF
+#6066FF
+#FFFFFF
+
+- Shades: 
+
+
+
+
+
+
+--- 05 SHADOWS
+
+
+--- 06 BORDER-RADIUS
+
+Default: 1rem
+Medium: 2.5rem
+
+--- 07 WHITESPACE
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+
+*,
+*::after,
+::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #252eff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.credentials-container {
+  background-color: #ffffff;
+  max-width: 130rem;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+
+}
+.credentials-form {
+  background-color: #ffffff;
+  padding: 4rem;
+  border-radius: 1rem;
+  box-shadow: 2rem 2rem 2rem rgba(0, 60, 255, 0.1);
+  text-align: center;
+  width: 35rem;
+}
+.credentials-title {
+  font-size: 2.4rem;
+  font-weight: bold;
+  margin-bottom: 7rem;
+  color: #245ed0;
+}
+.input-field {
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  border: 0.1rem solid #6066FF;
+  border-radius: 1.5rem;
+  font-size: 1.4rem;
+}
+.password-container {
+  position: relative;
+}
+.password-toggle {
+  position: absolute;
+  top: 35%;
+  right: 1rem;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 1.4rem;
+}
+.forgot-password-container {
+  text-align: right;
+  margin-bottom: 3.5rem;
+}
+.forgot-password {
+  color: #252EFF;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+}
+
+.credentials-button {
+  background-color: #252EFF;
+  color: white;
+  border-radius: 2.5rem;
+  border: none;
+  padding: 1rem 0;
+  cursor: pointer;
+  font-size: 1.6rem;
+  width: 60%;
+}
+
+.credentials-button:hover {
+  background-color: #6066FF;
+}
+
+/* Reuse existing styles from your login page */
+
+/* Additional styles for registration page and toggle link */
+.credentials-in-toggle {
+  margin-top: 2rem;
+  font-size: 1.4rem;
+  color: #252eff;
+}
+.credentials-in-toggle span {
+  cursor: pointer;
+  color: #252eff;
+}
+
+.credentials-in-toggle span:hover {
+  text-decoration: underline;
+}
